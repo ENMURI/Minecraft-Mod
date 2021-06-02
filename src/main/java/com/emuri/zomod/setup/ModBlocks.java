@@ -17,9 +17,6 @@ public class ModBlocks {
             new Block(AbstractBlock.Properties.of(Material.CACTUS).strength(1).harvestLevel(0).sound(SoundType.ANVIL)));
 
 
-
-
-
     // Create a block without item
     private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block){
         return Registration.BLOCKS.register(name, block);
